@@ -4,8 +4,8 @@
     src: url(./Font/FRESH\ FRUIT\ PERSONAL\ USE-SVG.otf)format('truetype');
 }
 @font-face {
-    font-family: KGRed;
-    src: url(./Font/KGRedHands.ttf)format('truetype');
+    font-family: SubT;
+    src: url(./Font/ZTGatha-SemiBold.otf)format('truetype');
 }
 @font-face {
     font-family: Nunito;
@@ -135,16 +135,36 @@ body{
     margin-top: 30px;
 }
 
-/* Imagenes plantas */
-.Imgplanta{
-    width: 250px;
-    height: 250px;
-    min-height: 250px;
-    min-width: 250px;
-}
-
-
 /*Subtitulos*/
 .SubTPlantas{
+    padding: 5px;
+}
+.SubTPlantas p{
+    text-align: justify;
+    padding: 30px;
+    font-size: 30px;
+    background-color: #CDE4D0;
+    color: #000;
+    font-family: Nunito;
+}
+
+/* Plantas */
+.containerPlanta{
     text-align: center;
+}
+.txtplanta{
+    text-align: center;
+    font-family: SubT;
+    font-size: 50px;
+}
+.Imgplanta{
+    border-radius: 8px;
+    width: 300px;
+    height: 400px;
+}
+.Info{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Nunito;
 }

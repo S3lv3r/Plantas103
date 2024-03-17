@@ -1,4 +1,26 @@
-document.addEventListener("dblclick", e=>{
+document.addEventListener("keydown", e => {
+  if (e.key === "Enter") {
+      const searchTerm = document.getElementById("buscador").value.toLowerCase();
+      let found = false;
+
+      document.querySelectorAll(".txtplanta").forEach(txtplanta => {
+          if (txtplanta.textContent.toLowerCase().includes(searchTerm)) {
+              document.querySelectorAll(".Imgplanta").forEach(planta => {
+                  if (planta.id.toLowerCase().includes(searchTerm)) {
+                      planta.scrollIntoView();
+                      found = true;
+                  }
+              });
+          }
+      });
+
+      if (!found) {
+          alert("No se encontró ninguna coincidencia.");
+      }
+  }
+});
+
+/*document.addEventListener("dblclick", e=>{
 
     if (e.target.matches("#buscador")){  
 
@@ -12,7 +34,7 @@ document.addEventListener("dblclick", e=>{
             :alert("hola no jalo")
         })
     }
-  })
+  })*/
 
   
   /*if (e.target.matches("#buscador")){  
