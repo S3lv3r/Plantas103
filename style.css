@@ -1,1 +1,72 @@
-.containerTitle
+/* Fuentes */
+@font-face {
+    font-family: FreshFruit;
+    src: url(./Font/FRESH\ FRUIT\ PERSONAL\ USE-SVG.otf)format('truetype');
+}
+@font-face {
+    font-family: KGRed;
+    src: url(./Font/KGRedHands.ttf)format('truetype');
+}
+@font-face {
+    font-family: Nunito;
+    src: url(./Font/Nunito-VariableFont_wght.ttf)format('truetype');
+}
+body{
+    background-color: #F4FCF5;
+}
+/* Titulo */
+.containerTitle{
+    text-align: center;
+}
+.containerTitle img{
+    max-width: 100%; 
+    height: auto;
+}
+.containerTitle p{
+    position: absolute; 
+    top: 70px; 
+    left: 0; 
+    width: 100%; 
+    margin: 0; 
+    padding: 10px; 
+    text-align: center; 
+    color: white; 
+
+    font-size: 100px;
+    font-family: KGRed;
+    text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000;;
+}
+/* Barra de Busqueda*/
+.Search input{
+    font-family: Nunito;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    color: #A6B8A9;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.Search i{
+    font-size: 22px;
+    color: #A6B8A9;
+    cursor: pointer;
+}
+.Search:hover{
+    width: 500px;
+}
+.Search{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #eeeeee;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
+    transition: .5s ease-in-out;
+}
