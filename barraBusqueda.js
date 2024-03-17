@@ -3,9 +3,9 @@ document.addEventListener("keydown", e => {
       const searchTerm = document.getElementById("buscador").value.toLowerCase();
       let found = false;
 
-      document.querySelectorAll(".txtplanta").forEach(txtplanta => {
+      document.querySelectorAll(".txtplantaleft").forEach(txtplanta => {
           if (txtplanta.textContent.toLowerCase().includes(searchTerm)) {
-              document.querySelectorAll(".Imgplanta").forEach(planta => {
+              document.querySelectorAll(".Imgplantaleft").forEach(planta => {
                   if (planta.id.toLowerCase().includes(searchTerm)) {
                       planta.scrollIntoView();
                       found = true;
