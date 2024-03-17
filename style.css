@@ -11,9 +11,13 @@
     font-family: Nunito;
     src: url(./Font/Nunito-VariableFont_wght.ttf)format('truetype');
 }
+
+/* Body*/
 body{
     background-color: #F4FCF5;
+    overflow-x: hidden;
 }
+
 /* Titulo */
 .containerTitle{
     text-align: center;
@@ -39,6 +43,7 @@ body{
    -1px  1px 0 #000,
     1px  1px 0 #000;;
 }
+
 /* Barra de Busqueda*/
 .Search input{
     font-family: Nunito;
@@ -69,4 +74,61 @@ body{
     padding: 10px 20px;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
     transition: .5s ease-in-out;
+}
+
+/* Botones de Menu */
+/*.ImgBotones{
+    text-align: center;
+}
+.BtnSinFruto{
+    background: url(./Img/PlantaSinFrutoSF.jpeg);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    border: 5;
+    border-radius: 10px;
+}
+.BtnSinFruto:hover{
+    background: none;
+}
+.BtnConFruto{
+    background: url(./Img/PlantaConFrutoSF.jpeg);
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    border: 5;
+    border-radius: 10px;
+}*/
+
+.contenedorBtnSF{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorBtnSF figure{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgb(0, 0, 0, 0.50);
+    cursor: pointer;
+    position: relative;
+}
+.contenedorBtnSF figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.contenedorBtnSF figure .capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(205, 228, 208, 0.5);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
 }
