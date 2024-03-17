@@ -77,28 +77,6 @@ body{
 }
 
 /* Botones de Menu */
-/*.ImgBotones{
-    text-align: center;
-}
-.BtnSinFruto{
-    background: url(./Img/PlantaSinFrutoSF.jpeg);
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    border: 5;
-    border-radius: 10px;
-}
-.BtnSinFruto:hover{
-    background: none;
-}
-.BtnConFruto{
-    background: url(./Img/PlantaConFrutoSF.jpeg);
-    background-size: cover;
-    width: 400px;
-    height: 400px;
-    border: 5;
-    border-radius: 10px;
-}*/
 
 .contenedorBtnSF{
     width: 100%;
