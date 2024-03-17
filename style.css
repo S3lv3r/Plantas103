@@ -130,3 +130,11 @@ body{
     transition: all 500ms ease-out;
     margin-top: 30px;
 }
+
+/* Imagenes plantas */
+.Imgplanta{
+    width: 250px;
+    height: 250px;
+    min-height: 250px;
+    min-width: 250px;
+}
