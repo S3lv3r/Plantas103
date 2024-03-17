@@ -132,3 +132,23 @@ body{
     visibility: hidden;
     text-align: center;
 }
+.contenedorBtnSF figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedorBtnSF figure:hover > img{
+    transform: scale(1.3);
+}
+.contenedorBtnSF figure:hover > .capa h3{
+    margin-top: 150px;
+    margin-bottom: 15px;
+}
+.contenedorBtnSF figure .capa h3{
+    color: #000;
+    font-weight: 400;
+    font-family: Nunito;
+    font-size: 50px;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
