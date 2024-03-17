@@ -7,7 +7,7 @@ document.addEventListener("keydown", e => {
           if (txtplanta.textContent.toLowerCase().includes(searchTerm)) {
               document.querySelectorAll(".Imgplanta").forEach(planta => {
                   if (planta.id.toLowerCase().includes(searchTerm)) {
-                      planta.scrollIntoView();
+                      planta.scrollIntoView(false);
                       found = true;
                   }
               });
