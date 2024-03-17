@@ -19,7 +19,7 @@
 /* Body*/
 body{
     background-color: #fff;
-    overflow-x: hidden; /*F4FCF5
+    overflow-x: hidden; /*F4FCF5*/
 }
 
 /* Titulo */
@@ -142,7 +142,7 @@ body{
 .SubTPlantas p{
     text-align: justify;
     padding: 30px;
-    font-size: 20px;
+    font-size: 30px;
     background-color: #CDE4D0;
     color: #000;
     font-family: Nunito;
@@ -152,16 +152,19 @@ body{
 .containerPlanta{
     text-align: center;
 }
-.txtplantaleft{
+.txtplanta{
     text-align: center;
     font-family: SubT;
     font-size: 50px;
 }
-.Imgplantaleft{
+.Imgplanta{
     border-radius: 8px;
     width: 300px;
     height: 400px;
 }
-.infoPlanta{
-    font-size: 50px;
+.Info{
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Nunito;
 }
