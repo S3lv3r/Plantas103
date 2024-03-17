@@ -11,39 +11,46 @@
     font-family: Nunito;
     src: url(./Font/Nunito-VariableFont_wght.ttf)format('truetype');
 }
+@font-face {
+    font-family: Titulo;
+    src: url(./Font/klima-bold.otf)format('truetype');
+}
 
 /* Body*/
 body{
-    background-color: #F4FCF5;
-    overflow-x: hidden;
+    background-color: #fff;
+    overflow-x: hidden; /*F4FCF5
 }
 
 /* Titulo */
-.containerTitle{
-    text-align: center;
+.Titulo{
+    position: relative;
+    text-align: left;
 }
-.containerTitle img{
-    max-width: 100%; 
+.Titulo img{
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
-.containerTitle p{
-    position: absolute; 
-    top: 70px; 
-    left: 0; 
+.Titulo .TTexto{
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: translateY(-50%);
     width: 100%; 
     margin: 0; 
     padding: 10px; 
     text-align: center; 
-    color: white; 
+    color: #fff; 
 
-    font-size: 100px;
-    font-family: KGRed;
-    text-shadow: -1px -1px 0 #000,  
-    1px -1px 0 #000,
-   -1px  1px 0 #000,
-    1px  1px 0 #000;;
+    font-family: Titulo;
+    font-size: 5vw;;
 }
-
+/* Menu */
+.Menu{
+    font-family: Nunito;
+}
 /* Barra de Busqueda*/
 .Search input{
     font-family: Nunito;
@@ -60,14 +67,11 @@ body{
     color: #A6B8A9;
     cursor: pointer;
 }
-.Search:hover{
-    width: 500px;
-}
 .Search{
     display: flex;
     justify-self: center;
     align-items: center;
-    width: 50px;
+    width: 500px;
     height: 50px;
     background: #eeeeee;
     border-radius: 8px;
@@ -137,4 +141,10 @@ body{
     height: 250px;
     min-height: 250px;
     min-width: 250px;
+}
+
+
+/*Subtitulos*/
+.SubTPlantas{
+    text-align: center;
 }
