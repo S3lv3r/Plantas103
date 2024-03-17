@@ -2,17 +2,29 @@ document.addEventListener("dblclick", e=>{
 
     if (e.target.matches("#buscador")){  
 
-        document.querySelectorAll(".Imgplanta").forEach(fruta =>{
-           fruta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-            ?alert("hola si jalo"):alert("hola no jalo")
-           
+        document.querySelectorAll(".txtplanta").forEach(txtplanta =>{
+           txtplanta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+            ?document.querySelectorAll(".Imgplanta").forEach(planta =>{
+                planta.id.toLowerCase().includes(e.target.value.toLowerCase())
+                ?planta.scrollIntoView()
+                :alert("no")
+            })
+            :alert("hola no jalo")
         })
     }
   })
 
   
-  
-  
+  /*if (e.target.matches("#buscador")){  
+
+    document.querySelectorAll(".txtplanta").forEach(fruta =>{
+       fruta.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+        ?fruta.scrollIntoView()
+        :alert("hola no jalo")
+       
+    })
+}
+  */
   
   
   
