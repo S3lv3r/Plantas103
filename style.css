@@ -24,16 +24,20 @@ body{
 
 /* Titulo */
 .Titulo{
-    align-items: center;
+    position: relative;
+    text-align: left;
 }
 .Titulo img{
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 .Titulo .TTexto{
-    position: absolute; 
-    top: 300px; 
-    right: 500px; 
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    transform: translateY(-50%);
     width: 100%; 
     margin: 0; 
     padding: 10px; 
@@ -41,7 +45,11 @@ body{
     color: #fff; 
 
     font-family: Titulo;
-    font-size: 100px;;
+    font-size: 5vw;;
+}
+/* Menu */
+.Menu{
+    font-family: Nunito;
 }
 /* Barra de Busqueda*/
 .Search input{
@@ -130,5 +138,4 @@ body{
 /*Subtitulos*/
 .SubTPlantas{
     text-align: center;
-    
 }
